@@ -1,0 +1,13 @@
+.detailsFilm{
+    display: block;
+    overflow: hidden;
+}
+.imgFilm{
+    width: 35%;
+    float: left;
+}
+
+.infoFilm{
+    width: 65%;
+    float: right;
+}

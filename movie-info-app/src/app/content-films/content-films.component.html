@@ -1,0 +1,21 @@
+<div class="contentPagination">
+    <ngb-pagination class="d-flex justify-content-center" [collectionSize]="collectionSize" pageSize="20" [(page)]="page"
+      [maxSize]="5" [rotate]="true" [directionLinks]="false" [boundaryLinks]="true" (pageChange)="onPageChanged($event)"></ngb-pagination>
+  </div>
+<div class="searchForm">
+  <app-search-film></app-search-film>
+</div>
+<div class="appContentFilm">
+  <div class="catalogProductsWrap">
+    <div class="catalogProductUnit" *ngFor="let item of content.results">
+      <a routerLink="/film/{{item.id}}">
+        <img width="185" height="278" src="http://image.tmdb.org/t/p/w185{{item.poster_path}}" alt="img Post Film">
+      </a>
+      <div class="title">{{item.title}}</div>
+      <div>
+        <input type="button" title="Background Image" />
+      </div>
+    </div>
+  </div>
+
+</div>

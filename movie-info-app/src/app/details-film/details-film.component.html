@@ -1,0 +1,15 @@
+
+<div class="detailsFilm">
+  <div class="imgFilm">
+      <img src="http://image.tmdb.org/t/p/w342{{detailsFilm.poster_path}}" alt="img Post Film">
+  </div>
+  <div class="infoFilm">
+    <h5>{{detailsFilm.title}}</h5>
+    <br>
+      <p>Жанры: <span *ngFor="let genre of detailsFilm.genres">{{genre.name}} </span></p>
+      <p>Рейтинг: {{detailsFilm.vote_average}}</p>
+      <p>{{detailsFilm.overview}}</p>
+      <br>
+      <button type="button" class="btn btn-primary btn-lg" (click)="back()">Назад</button>
+  </div>
+</div>

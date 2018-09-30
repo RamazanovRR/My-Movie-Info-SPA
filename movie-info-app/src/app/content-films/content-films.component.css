@@ -1,0 +1,50 @@
+
+.catalogProductsWrap:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.catalogProductUnit {
+    width: 22%;
+    float: left;
+    margin-right: 4%;
+}
+
+.catalogProductUnit:nth-child(n+5) {
+    margin-top: 35px;
+}
+
+.catalogProductUnit:nth-child(4n) {
+    margin-right: 0;
+}
+.appContentFilm{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* .appContentFilm:after{
+    clear: both;
+    display: block;
+    content: "";
+} */
+.contentPagination:after{
+    clear: both;
+    display: inline;
+    content: "";
+}
+.d-flex {
+    height: 40px ;
+}
+.title{
+    height: 40px;
+}
+.searchForm{
+    width: 100%;
+}
+input[type="button"] {
+    background: url('https://png.icons8.com/color/20/000000/star-trek-symbol.png') no-repeat;
+}
+h6{
+    align-content: center
+}

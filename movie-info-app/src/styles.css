@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.footer{
+    background: #574568;
+    height: 50px;
+    position: relative;
+    margin-top: 10px;
+}
+.footer p{
+    height: 150;
+    position: absolute;
+    right: 30px;
+
+}

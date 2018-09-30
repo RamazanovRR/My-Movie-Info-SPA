@@ -1,0 +1,18 @@
+<div id="search-component">
+  <h4> Film Search</h4>
+
+  <form id="form">
+      <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+      <div>
+          <ul class="search-result">
+              <li *ngFor="let item of contentSearch.results">
+                <a routerLink="/film/{{item.id}}" onclick="from.reset()">
+                  {{item.title}}
+                </a>
+              </li>
+            </ul>
+      </div>
+  </form>
+
+  
+</div>
